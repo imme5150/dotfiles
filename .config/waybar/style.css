@@ -1,0 +1,129 @@
+@import "./themes/mocha.css";
+
+* {
+  font-family: "JetBrains Mono", "Fira Code", "Inconsolata", "Noto Sans", monospace;
+  font-weight: bold;
+  min-height: 0;
+  /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+  font-size: 105%;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+#waybar {
+  background: transparent;
+  color: @text;
+  margin: 0;
+}
+
+#custom-player,
+#custom-launcher,
+#custom-browser,
+#custom-terminal,
+#custom-files,
+#bluetooth,
+#cpu,
+#memory,
+#custom-music,
+#tray,
+#network,
+#backlight,
+#custom-clock,
+#battery,
+#pulseaudio,
+#language,
+#custom-sleep,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.3rem 1rem;
+  margin: 0;
+}
+
+#workspaces {
+  margin: 5px;
+  background-color: @surface0;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  padding: 0.5rem;
+}
+
+#workspaces button.active {
+  color: @sky;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+}
+
+#cpu {
+  margin-left: 1rem;
+  color: @rosewater;
+}
+
+#memory {
+  margin-right: 1rem;
+  color: @rosewater;
+}
+
+#custom-launcher {
+  color: @rosewater;
+}
+
+#custom-player {
+  color: @rosewater;
+}
+
+#custom-music {
+  color: @mauve;
+}
+
+#pulseaudio {
+  color: @mauve;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.warning.discharging {
+  color: @peach;
+}
+
+#battery.critical {
+  color: @red;
+}
+
+#clock {
+  color: @text;
+  margin-right: 1rem;
+}
+
+#network {
+  color:@blue;
+  border-radius:0 0 0 1rem;
+}
+#network.disabled {
+  color:red;
+}
+
+#bluetooth {
+  color: @blue;
+}
+
+#custom-network {
+  color:@blue;
+}
+
+#language {
+  color: @blue;
+}
+
+#custom-sleep {
+  color: @red;
+}
