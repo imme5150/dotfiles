@@ -1,0 +1,2 @@
+rm ~/LICENSE
+yadm update-index --assume-unchanged LICENSE
