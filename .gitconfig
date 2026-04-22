@@ -1,0 +1,50 @@
+[user]
+        name = Josh Shupack
+[github]
+   user = imme5150
+[color]
+        ui = auto
+[color "branch"]
+   remote = magenta
+[color "diff"]
+   meta = cyan
+[color "status"]
+   added = green normal bold
+   untracked = red normal bold
+   changed = magenta normal bold
+[alias]
+     st = status
+     s = status
+     cm = commit -m
+     ca = commit -am
+     br = branch
+     bl = blame
+     co = checkout
+     df = diff --color-words
+     dc = diff --cached --color-words
+     lp = log -p
+     ls = log --stat
+     lg = log --pretty=format:'%Cred%h%Creset %C(bold blue)%an %Cgreen%cr %C(yellow)%d%Creset%n        %s%n' --abbrev-commit --date=relative
+     lgg = log --graph
+     who = shortlog -s --
+        shove = "!f() { H=$(git current-branch) && git push -u origin $H; }; f"
+        current-branch = rev-parse --symbolic-full-name --abbrev-ref HEAD
+[core]
+        excludesfile = ~/.gitignore_global
+        pager = less -+S
+       pager = less -F -X
+[push]
+        default = current
+[branch]
+[merge]
+        tool = opendiff
+[heroku]
+        account = personal
+[pull]
+        default = current
+[branch]
+        autosetupmerge = always
+[init]
+       defaultBranch = main
+[credential]
+       helper = cache
