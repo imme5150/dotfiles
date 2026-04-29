@@ -79,7 +79,7 @@ alias pg="ping google.com"
 alias tcl="rlwrap tclsh"
 alias y="yadm"
 
-source .bashrc_local
+source "$HOME/.bashrc_local"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
