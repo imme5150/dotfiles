@@ -44,9 +44,6 @@ set showcmd
 " set cursorline
 " highlight Cursorline cterm=bold
 
-" wrapping stuff
-set textwidth=80
-
 " ignore whitespace in diff mode
 set diffopt+=iwhite
 
